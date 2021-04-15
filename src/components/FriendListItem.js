@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
-  <li class="item">
-    <span class={isOnline ? "status-online" : "status-offline"}></span>
-    <img class="avatar" src={avatar} alt="user's avatar" width="48" />
-    <p class="name">{name}</p>
+  <li className="item">
+    <span className={isOnline ? "status-online" : "status-offline"}></span>
+    <img className="avatar" src={avatar} alt="user's avatar" width="48" />
+    <p className="name">{name}</p>
   </li>
 );
 
