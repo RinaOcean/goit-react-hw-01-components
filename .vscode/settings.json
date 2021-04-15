@@ -1,0 +1,8 @@
+{
+  "emmet.extensionsPath": "",
+  "emmet.syntaxProfiles": {
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+    }
+  }
+}

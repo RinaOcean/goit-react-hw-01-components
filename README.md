@@ -1,59 +1,8 @@
-# Список друзей
-
-Необходимо создать компонент `<FriendList>`, с помощью которого мы могли бы
-отображать информацию о друзьях пользователя. Информация о друзьях хранится в
-файле [friends.json](./friends.json).
-
-![Превью компонента FriendList](./src/friend-list/preview.jpg)
-
-## Описание компонента FriendList
-
-Компонент должен принимать один проп `friends` - массив объектов друзей.
-
-Компонент должен создавать DOM следующей структуры.
-
-```html
-<ul class="friend-list">
-  <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->
-</ul>
-```
-
-## Описание компонента FriendListItem
-
-Компонент должен принимать несколько пропов:
-
-- `avatar` - ссылка на аватар
-- `name` - имя друга
-- `isOnline` - буль сигнализирующий о состоянии друга, в сети или нет.
-
-В зависимости от пропа `isOnline`, должен меняться цвет фона `span.status`. Это
-можно сделать через разный CSS-класс или Styled Components.
-
-Компонент должен создавать DOM следующей структуры.
-
-```html
-<li class="item">
-  <span class="status"></span>
-  <img class="avatar" src="" alt="" width="48" />
-  <p class="name"></p>
-</li>
-```
-
-## Пример использования
-
-```js
-import friends from 'путь/к/friends.json';
-
-<FriendList friends={friends} />,
-```
-
----
-
 # Профиль социальной сети
 
 Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
 отображать информацию о пользователе социальной сети. Данные о пользователе
-лежат в файле [user.json](./user.json).
+лежат в файле [user.json](./src/social-profile/user.json).
 
 ![Превью компонента Profile](./src/social-profile/preview.png)
 
@@ -113,12 +62,63 @@ import user from 'путь/к/user.json;
 />
 ```
 
+# Список друзей
+
+Необходимо создать компонент `<FriendList>`, с помощью которого мы могли бы
+отображать информацию о друзьях пользователя. Информация о друзьях хранится в
+файле [friends.json](./src/friend-list/friends.json).
+
+![Превью компонента FriendList](./src/friend-list/preview.jpg)
+
+## Описание компонента FriendList
+
+Компонент должен принимать один проп `friends` - массив объектов друзей.
+
+Компонент должен создавать DOM следующей структуры.
+
+```html
+<ul class="friend-list">
+  <!-- Произвольное кол-во FriendListItem, в зависимости от кол-ва объектов в массиве -->
+</ul>
+```
+
+## Описание компонента FriendListItem
+
+Компонент должен принимать несколько пропов:
+
+- `avatar` - ссылка на аватар
+- `name` - имя друга
+- `isOnline` - буль сигнализирующий о состоянии друга, в сети или нет.
+
+В зависимости от пропа `isOnline`, должен меняться цвет фона `span.status`. Это
+можно сделать через разный CSS-класс или Styled Components.
+
+Компонент должен создавать DOM следующей структуры.
+
+```html
+<li class="item">
+  <span class="status"></span>
+  <img class="avatar" src="" alt="" width="48" />
+  <p class="name"></p>
+</li>
+```
+
+## Пример использования
+
+```js
+import friends from 'путь/к/friends.json';
+
+<FriendList friends={friends} />,
+```
+
+---
+
 # Секция статистики
 
 Создать компонет `<Statistics>`, который бы отображал статистику по переданным
 пропам. К примеру загрузки в облако по типу файлов, посещение веб-страницы
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
-в файле [statistical-data.json](./statistical-data.json).
+в файле [statistical-data.json](./src/statistics/statistical-data.json).
 
 ![Превью компонента Statistics](./src/statistics/preview.jpg)
 
@@ -178,7 +178,7 @@ import statisticalData from "/путь/к/statistical-data.json";
 ![Превью компонента TransactionHistory](./src/transaction-history/preview.jpg)
 
 Данные для списка доступны в формате JSON в файле
-[transactions.json](./transactions.json). Это массив объектов, каждый объект
+[transactions.json](./src/transaction-history/transactions.json). Это массив объектов, каждый объект
 описывает одну транзакцию со следующими свойствами:
 
 - `id` — уникальный идентификатор транзакции

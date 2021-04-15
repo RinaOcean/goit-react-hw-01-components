@@ -1,25 +1,25 @@
-import logo from "./logo.svg";
+import React from "react";
+import ReactDOM from "react-dom";
 import "./App.css";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+import friends from "./friend-list/friends.json";
+import FriendList from "./components/FriendList";
+import FriendListItem from "./components/FriendListItem";
 
-// export default App;
+function App() {
+  return (
+    <div className="App">
+      <FriendList friends={friends} />
+      {friends.map((friend) => (
+        <FriendListItem
+          avatar={friend.avatar}
+          name={friend.name}
+          isOnline={friend.isOnline}
+        />
+      ))}
+      <FriendList />
+    </div>
+  );
+}
+
+export default App;
