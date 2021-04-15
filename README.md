@@ -4,7 +4,7 @@
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
 файле [friends.json](./friends.json).
 
-![Превью компонента FriendList](./preview.jpg)
+![Превью компонента FriendList](./friend-list/preview.jpg)
 
 ## Описание компонента FriendList
 
