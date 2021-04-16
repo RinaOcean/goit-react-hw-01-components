@@ -4,7 +4,7 @@
 отображать информацию о пользователе социальной сети. Данные о пользователе
 лежат в файле [user.json](./src/data/user.json).
 
-![Превью компонента Profile](./src/data/preview.png)
+![Превью компонента Profile](./src/data/profilePreview.png)
 
 ## Описание компонента
 
@@ -69,7 +69,7 @@ import user from 'путь/к/user.json;
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
 в файле [statistical-data.json](./src/data/statistical-data.json).
 
-![Превью компонента Statistics](./src/data/preview.jpg)
+![Превью компонента Statistics](./src/data/statisticsPreview.jpg)
 
 ## Описание компонента
 
@@ -125,7 +125,7 @@ import statisticalData from '/путь/к/statistical-data.json';
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
 файле [friends.json](./src/data/friends.json).
 
-![Превью компонента FriendList](./src/data/preview.jpg)
+![Превью компонента FriendList](./src/data/friendlistPreview.jpg)
 
 ## Описание компонента FriendList
 
@@ -175,7 +175,7 @@ import friends from 'путь/к/friends.json';
 Необходимо создать компонент истории транзакций в личном кабинете интернет
 банка.
 
-![Превью компонента TransactionHistory](./src/data/preview.jpg)
+![Превью компонента TransactionHistory](./src/data/transactionsPreview.jpg)
 
 Данные для списка доступны в формате JSON в файле
 [transactions.json](./src/data/transactions.json). Это массив объектов, каждый
