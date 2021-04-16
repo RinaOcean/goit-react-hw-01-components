@@ -1,0 +1,8 @@
+.profile {
+  width: 100px;
+}
+
+.profile__avatar {
+  width: 100%;
+  height: 100%;
+}

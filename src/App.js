@@ -2,13 +2,15 @@ import React from "react";
 
 import "./App.css";
 
-import user from "./social-profile/user.json";
-import statistics from "./statistics/statistical-data";
-import friends from "./friend-list/friends.json";
+import user from "./components/Profile/user";
+import statistics from "./components/Statistics/statistical-data";
+import friends from "./components/FriendList/friends";
+import transactions from "./components/TransactionsHistory/transactions";
 
-import Profile from "./components/Profile.jsx";
-import Statistics from "./components/Statistics";
-import FriendList from "./components/FriendList.jsx";
+import Profile from "./components/Profile/Profile";
+import Statistics from "./components/Statistics/Statistics";
+import FriendList from "./components/FriendList/FriendList.jsx";
+import TransactionsHistory from "./components/TransactionsHistory/TransactionHistory";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <Statistics title="Upload stats" stats={statistics} />
       {/* <Statistics stats={statistics} /> */}
       <FriendList friends={friends} />
+      <TransactionsHistory items={transactions} />
     </div>
   );
 }

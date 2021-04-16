@@ -2,9 +2,9 @@
 
 Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
 отображать информацию о пользователе социальной сети. Данные о пользователе
-лежат в файле [user.json](./src/social-profile/user.json).
+лежат в файле [user.json](./src/components/Profile/user.json).
 
-![Превью компонента Profile](./src/social-profile/preview.png)
+![Превью компонента Profile](./src/components/Profile/preview.png)
 
 ## Описание компонента
 
@@ -67,9 +67,10 @@ import user from 'путь/к/user.json;
 Создать компонет `<Statistics>`, который бы отображал статистику по переданным
 пропам. К примеру загрузки в облако по типу файлов, посещение веб-страницы
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
-в файле [statistical-data.json](./src/statistics/statistical-data.json).
+в файле
+[statistical-data.json](./src/components/Statistics/statistical-data.json).
 
-![Превью компонента Statistics](./src/statistics/preview.jpg)
+![Превью компонента Statistics](./src/components/Statistics/preview.jpg)
 
 ## Описание компонента
 
@@ -113,7 +114,7 @@ import user from 'путь/к/user.json;
 ## Пример использования
 
 ```js
-import statisticalData from "/путь/к/statistical-data.json";
+import statisticalData from '/путь/к/statistical-data.json';
 
 <Statistics title="Upload stats" stats={statisticalData} />;
 <Statistics stats={statisticalData} />;
@@ -123,9 +124,9 @@ import statisticalData from "/путь/к/statistical-data.json";
 
 Необходимо создать компонент `<FriendList>`, с помощью которого мы могли бы
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
-файле [friends.json](./src/friend-list/friends.json).
+файле [friends.json](./src/components/FriendList/friends.json).
 
-![Превью компонента FriendList](./src/friend-list/preview.jpg)
+![Превью компонента FriendList](./src/components/FriendList/preview.jpg)
 
 ## Описание компонента FriendList
 
@@ -175,11 +176,12 @@ import friends from 'путь/к/friends.json';
 Необходимо создать компонент истории транзакций в личном кабинете интернет
 банка.
 
-![Превью компонента TransactionHistory](./src/transaction-history/preview.jpg)
+![Превью компонента TransactionHistory](./src/components/TransactionsHistory/preview.jpg)
 
 Данные для списка доступны в формате JSON в файле
-[transactions.json](./src/transaction-history/transactions.json). Это массив объектов, каждый объект
-описывает одну транзакцию со следующими свойствами:
+[transactions.json](./src/components/TransactionsHistory/transactions.json). Это
+массив объектов, каждый объект описывает одну транзакцию со следующими
+свойствами:
 
 - `id` — уникальный идентификатор транзакции
 - `type` — тип транзакции
@@ -221,7 +223,7 @@ import friends from 'путь/к/friends.json';
 ## Пример использования
 
 ```js
-import transactions from "путь/к/transactions.json";
+import transactions from 'путь/к/transactions.json';
 
 <TransactionHistory items={transactions} />;
 ```
