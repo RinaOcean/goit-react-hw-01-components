@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className="profile">
-    <div class="description">
+    <div className="description">
       <img src={avatar} alt="Аватар пользователя" className="avatar" />
       <p className="name">{name}</p>
       <p className="tag">@{tag}</p>
@@ -37,13 +37,7 @@ Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(
-    PropTypes.shape({
-      folowers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };
 
 export default Profile;

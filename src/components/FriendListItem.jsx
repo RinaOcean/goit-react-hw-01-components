@@ -9,6 +9,11 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
   </li>
 );
 
+FriendListItem.defaultProps = {
+  avatar:
+    "https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder",
+};
+
 FriendListItem.propTypes = {
   isOnline: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
