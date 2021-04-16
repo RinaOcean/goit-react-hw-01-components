@@ -2,10 +2,10 @@ import React from "react";
 
 import "./App.css";
 
-import user from "./components/Profile/user";
-import statistics from "./components/Statistics/statistical-data";
-import friends from "./components/FriendList/friends";
-import transactions from "./components/TransactionsHistory/transactions";
+import user from "./data/user";
+import statistics from "./data/statistical-data";
+import friends from "./data/friends";
+import transactions from "./data/transactions";
 
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";

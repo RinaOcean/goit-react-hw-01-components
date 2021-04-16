@@ -14,7 +14,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => (
     <ul className="profile__stats">
       <li>
         <span className="profile__stats__label">Followers</span>
-        <span className="profile__stats__quantity">{stats.folowers}</span>
+        <span className="profile__stats__quantity">{stats.followers}</span>
       </li>
       <li>
         <span className="profile__stats__label">Views</span>

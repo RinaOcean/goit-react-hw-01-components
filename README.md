@@ -2,9 +2,9 @@
 
 Необходимо создать компонент `<Profile>`, с помощью которого мы могли бы
 отображать информацию о пользователе социальной сети. Данные о пользователе
-лежат в файле [user.json](./src/components/Profile/user.json).
+лежат в файле [user.json](./src/data/user.json).
 
-![Превью компонента Profile](./src/components/Profile/preview.png)
+![Превью компонента Profile](./src/data/preview.png)
 
 ## Описание компонента
 
@@ -67,10 +67,9 @@ import user from 'путь/к/user.json;
 Создать компонет `<Statistics>`, который бы отображал статистику по переданным
 пропам. К примеру загрузки в облако по типу файлов, посещение веб-страницы
 пользователями разных стран, финансовые траты и т. п. Данные о статистике лежат
-в файле
-[statistical-data.json](./src/components/Statistics/statistical-data.json).
+в файле [statistical-data.json](./src/data/statistical-data.json).
 
-![Превью компонента Statistics](./src/components/Statistics/preview.jpg)
+![Превью компонента Statistics](./src/data/preview.jpg)
 
 ## Описание компонента
 
@@ -124,9 +123,9 @@ import statisticalData from '/путь/к/statistical-data.json';
 
 Необходимо создать компонент `<FriendList>`, с помощью которого мы могли бы
 отображать информацию о друзьях пользователя. Информация о друзьях хранится в
-файле [friends.json](./src/components/FriendList/friends.json).
+файле [friends.json](./src/data/friends.json).
 
-![Превью компонента FriendList](./src/components/FriendList/preview.jpg)
+![Превью компонента FriendList](./src/data/preview.jpg)
 
 ## Описание компонента FriendList
 
@@ -176,12 +175,11 @@ import friends from 'путь/к/friends.json';
 Необходимо создать компонент истории транзакций в личном кабинете интернет
 банка.
 
-![Превью компонента TransactionHistory](./src/components/TransactionsHistory/preview.jpg)
+![Превью компонента TransactionHistory](./src/data/preview.jpg)
 
 Данные для списка доступны в формате JSON в файле
-[transactions.json](./src/components/TransactionsHistory/transactions.json). Это
-массив объектов, каждый объект описывает одну транзакцию со следующими
-свойствами:
+[transactions.json](./src/data/transactions.json). Это массив объектов, каждый
+объект описывает одну транзакцию со следующими свойствами:
 
 - `id` — уникальный идентификатор транзакции
 - `type` — тип транзакции
